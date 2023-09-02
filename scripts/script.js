@@ -60,7 +60,7 @@ const initGame = (button, clickedLetter) => {
     hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
   }
   
-  button.disabled = true; // Correct the property name here
+  button.dissabled = true;
   guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 
   if (wrongGuessCount === maxGuesses) return gameOver(false);
